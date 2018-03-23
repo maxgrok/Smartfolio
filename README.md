@@ -2,25 +2,28 @@
 
 # Smartfolio Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+< This is an Application that allow users to create thier own portfolios.
 
-Things you may want to cover:
+###Features
 
-* Ruby version
+- Real time chat for comments
 
-* System dependencies
+- Blog
 
-* Configuration
+- Portfolio
+- Drag and Drop interface
 
-* Database creation
+### Code Example
+```
+  def hello
+     puts "Hello good to meet you!"
+  end
+```
 
-* Database initialization
+### Python
 
-* How to run the test suite
+```
+  def hello():
+    print("Hello good to see you all!")
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
