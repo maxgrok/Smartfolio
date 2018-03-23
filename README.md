@@ -4,7 +4,7 @@
 
 < This is an Application that allow users to create thier own portfolios.
 
-###Features
+### Features
 
 - Real time chat for comments
 
