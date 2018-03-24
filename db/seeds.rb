@@ -26,8 +26,8 @@ puts "5 skills were created"
      body: "The
 company extended the metaphor to the website with an image
 of a suit of armor and the same tagline. The metaphor was consistent throughout the company’s marketing material",
-     main_image: "image_path('930')",
-     thumb_image: "image_path('930')"
+     main_image: "image_path('930.jpg')",
+     thumb_image: "image_path('930.jpg')"
   	)
 end
 
