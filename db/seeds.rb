@@ -1,7 +1,34 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+10.times do |blog|
+  Blog.create!(
+    title: "my blog post #{blog}",
+    body: "Analogies are close cousins of metaphors and also are very
+effective. An analogy is a comparison between two different
+things in order to highlight some area of similarity."
+ 
+  	)
+end
+
+puts "10 blog posts were created"
+
+5.times do |skill|
+  Skill.create!(
+     title: "Rails #{skill}",
+     percent_utilized: 50
+  	)
+end
+
+puts "5 skills were created"
+
+9.times do |portfolio_item|
+  Portfolio.create!(
+     title:"Portfolio title: #{portfolio_item}",
+     subtitle: "My great service",
+     body: "The
+company extended the metaphor to the website with an image
+of a suit of armor and the same tagline. The metaphor was consistent throughout the company’s marketing material",
+     main_image: "https://placehold.it/600x400",
+     thumb_image: "https://placehold.it/350x200"
+  	)
+end
+
+puts "9 portfolio items were created"
