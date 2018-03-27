@@ -55,3 +55,12 @@ of a suit of armor and the same tagline. The metaphor was consistent throughout 
 end
 
 puts "1 portfolio items were created"
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+     name:"Technology #{technology}"
+    )
+end
+
+puts "3 technologies were created"
+
