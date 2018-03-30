@@ -19,5 +19,9 @@
        <%= link_to "Register",  new_user_registration_path %>
      <% end %>
     <%= yield %>
+    <hr>
+    <% if session[:source] %>
+        Thanks fo visiting me from <%= session[:source] %>
+    <% end %>
   </body>
 </html>
