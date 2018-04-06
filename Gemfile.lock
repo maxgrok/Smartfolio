@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/Boadzie/SmartfolioViewTool
+  revision: 2560f7fc05105ef61f36e1c604b5a6baea0471c3
+  specs:
+    smartfolio_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -227,6 +233,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.5)
   sass-rails (~> 5.0)
+  smartfolio_view_tool!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
