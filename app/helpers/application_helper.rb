@@ -17,7 +17,7 @@ module ApplicationHelper
 	end
 
 	def copyright_generator
-  	    SmartfolioViewTool::Renderer.copyright "Boadzie Daniel", "All Rights Reserved."
+  	    McleanViewTool::Renderer.copyright "Boadzie Daniel", "All Rights Reserved."
     end
 	
 end
