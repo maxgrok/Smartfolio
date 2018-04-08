@@ -15,11 +15,11 @@
 
        <%= render 'shared/application_nav' %>
 
-       <%= login_helper %>
-
+       
        <%= yield %> <br>
-
-       <%= copyright_generator %>
+       
+       <%= render 'shared/application_footer' %>
+     
        <hr>
        <%= source_helper("application") %>
 
