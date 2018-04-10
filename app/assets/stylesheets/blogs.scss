@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 /* stylelint-disable selector-list-comma-newline-after */
 
@@ -133,6 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+/*custom styles*/
 .space{
 	margin:8px;
 }
@@ -143,4 +145,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .center{
   text-align: center;
+}
+
+.list-unstyled{
+  padding-bottom: 30px;
+  /*margin: 20px;*/
 }
