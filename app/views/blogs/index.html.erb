@@ -1,22 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div class="jumbotron p-5 md-4 text-white rounded bg-dark">
+        <div class="col-md-12 px-0">
+          <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
+          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p><br>
+          <p>
+            <% if logged_in?(:site_admin) %>
+            <%= link_to "Write New Blog", new_blog_path, class:"btn btn-outline-primary"  %>
+            <% end %>
+          </p>
+        </div>
+</div>
+<main role="main">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <%= paginate @blogs %>
+          <%= render @blogs %>
+          <nav class="blog-pagination">
+            <%= paginate @blogs %>
+          </nav>
+        </div><!-- /.blog-main -->
+      </div><!-- /.row -->
 
-<h1>Blogs</h1>
+</main><!-- /.container -->
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Date</th>
-      <th>Body</th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <%= render @blogs %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>

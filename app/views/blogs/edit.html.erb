@@ -1,6 +1,15 @@
-<h1>Editing Blog</h1>
+<main role="main">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+         <h1>Editing Blog</h1>
+        <%= render 'form', blog: @blog %>
+        </div><!-- /.blog-main -->
+      </div><!-- /.row -->
+	<%= link_to 'Show', @blog, class:"btn btn-dark" %> |
+	<%= link_to 'Back', blogs_path, class:"btn btn-dark" %>
+</main><!-- /.container -->
 
-<%= render 'form', blog: @blog %>
+<h1></h1>
 
-<%= link_to 'Show', @blog %> |
-<%= link_to 'Back', blogs_path %>
+
+

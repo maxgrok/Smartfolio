@@ -1,0 +1,10 @@
+<style class:"center">
+.pagination{padding:.5em;margin:.4em; font: 20.34px helvetica,arial,freesans,clean,sans-serif;}
+.pagination a{padding:.4em .3em;margin:.2em;border:1px solid #aad;border-radius:25px;text-decoration:none;color:#369;}
+.pagination a:hover,.pagination a:active{border:1px solid #369;border-radius:25px;color:#000;}
+.pagination span.current{padding:.4em .3em;margin:.2em;border:1px solid #369;border-radius:25px;font-weight:bold;background-color:#369;color:#FFF;}
+.pagination span.disabled{padding:.4em .3em;margin:.2em;border:1px solid #eee;border-radius:25px;color:#ddd;}
+</style>
+<%= paginator.render do -%>
+<div class="pagination"><%= prev_page_tag -%><%= next_page_tag -%></div>
+<% end -%>
