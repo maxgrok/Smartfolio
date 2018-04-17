@@ -34,7 +34,18 @@ a:hover {
 html,
 body {
     height: 100%;
-    background-color: #333;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    max-width: 100%;
+    width: auto;
+    // height: auto;
+    z-index: -100%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: image-url('patrick-lindenberg-191841-unsplash.jpg') no-repeat;
+    background-size: cover;
 }
 
 body {
@@ -162,3 +173,5 @@ body {
 .masthead-brand {
     margin-left: -100px;
 }
+
+#background {}
